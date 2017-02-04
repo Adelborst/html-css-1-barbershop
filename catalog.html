@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <nav class="main-nav">
-                <div class="main-header-logo">
+                <div class="header-logo">
                     <a href="#">
                         <img src="img/logo.png" alt="Барбершоп Бородинский" width="111" height="24">
                     </a>
@@ -29,7 +30,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="main-body">
         <div class="container">
             <h1 class="page-title">Средства для ухода</h1>
             <nav class="breadcrumbs-nav">
@@ -39,11 +40,11 @@
                     <li class="active"><a>Средства для ухода</a></li>
                 </ul>
             </nav>
-            <div class="page-content">
-                <div class="catalog-content-left">
+            <div class="page-content clearfix">
+                <div class="catalog-page-left">
                     <form action="#" method="get" class="catalog-form">
                         <fieldset class="catalog-form-group">
-                            <legend>Производители:</legend>
+                            <legend class="catalog-form-group-title">Производители:</legend>
                             <ul>
                                 <li><label><input type="checkbox" name="manufacturers" value="1" checked>Baxter of California</label></li>
                                 <li><label><input type="checkbox" name="manufacturers" value="2">Mr Natty</label></li>
@@ -54,7 +55,7 @@
                             </ul>
                         </fieldset>
                         <fieldset class="catalog-form-group">
-                            <legend>Группы товаров:</legend>
+                            <legend class="catalog-form-group-title">Группы товаров:</legend>
                             <ul>
                                 <li><label><input type="radio" name="product-group" value="1">Бритвенные принадлежности</label></li>
                                 <li><label><input type="radio" name="product-group" value="2" checked>Средства для ухода</label></li>
@@ -64,7 +65,7 @@
                         <button type="submit" class="btn">Показать</button>
                     </form>
                 </div>
-                <div class="catalog-content-right">
+                <div class="catalog-page-right">
                     <ul class="catalog-list">
                         <li>                            
                             <article class="catalog-item">
@@ -75,7 +76,7 @@
                                         <span class="catalog-item-name">«Baxter of California»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">2 900 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
@@ -90,7 +91,7 @@
                                         <span class="catalog-item-name">«Baxter of California»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">750 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
@@ -105,7 +106,7 @@
                                         <span class="catalog-item-name">«SUAVECITO»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">290 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
@@ -120,7 +121,7 @@
                                         <span class="catalog-item-name">«American crew»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">500 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
@@ -135,7 +136,7 @@
                                         <span class="catalog-item-name">«AMERICAN CREW»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">300 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
@@ -150,17 +151,17 @@
                                         <span class="catalog-item-name">«Baxter of California»</span>
                                     </a>
                                 </h2>
-                                <div class="catalog-item-buy">
+                                <div class="buy">
                                     <span class="price">3 900 руб.</span>
                                     <a href="#" class="btn">Купить</a>
                                 </div>
                             </article>
                         </li>
                     </ul>
-                    <nav class="catalog-list-nav">
+                    <nav class="paginator">
                         <ul>
                             <li><a href="#" class="btn">1</a></li>
-                            <li class="active"><a>2</a></li>
+                            <li class="active"><a class="btn">2</a></li>
                             <li><a href="#" class="btn">3</a></li>
                             <li><a href="#" class="btn">4</a></li>
                         </ul>
@@ -170,7 +171,7 @@
         </div>
     </main>
     <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <section class="footer-contacts">
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
