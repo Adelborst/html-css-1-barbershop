@@ -39,7 +39,7 @@ h2 {
     line-height: 30px;
 }
 
-.clearfix {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
